@@ -8,8 +8,6 @@
 
 이 프로젝트는 Notion 데이터베이스나 페이지에 있는 방대한 자료들을 자동으로 긁어와서, Google Gemini AI (최신 모델)를 통해 분석하고, 그 결과를 다시 Notion에 예쁜 보고서 형태로 저장해주는 도구입니다.
 
-![Demo](https://via.placeholder.com/800x400.png?text=Notion+AI+Summarizer+Demo) 
-*(실행 예시 스크린샷)*
 
 ---
 
@@ -17,6 +15,7 @@
 
 1.  **🔍 심층 탐색 (Deep Recursive Fetching)**
     *   단순히 페이지만 읽지 않습니다. **콜아웃(Callout), 토글(Toggle List), 컬럼** 안에 숨겨진 내용까지 샅샅이 찾아냅니다. (Inline Database 포함)
+    *   **최대 5단계 깊이(Depth 5)**까지 재귀적으로 탐색하여, 아주 깊숙한 곳에 있는 정보도 놓치지 않습니다.
 2.  **📝 스마트 포맷팅 (Markdown to Notion)**
     *   AI가 작성한 요약을 **Notion 전용 블록**(헤더, 인용구, 구분선, 체크리스트 등)으로 깔끔하게 변환하여 저장합니다.
 3.  **🤖 지능형 모델 전환 (Smart Fallback)**
@@ -40,21 +39,18 @@
 
 ### 2. 설치 (Installation)
 
-```bash
-# 1. 프로젝트 다운로드 (Git Clone)
-git clone https://github.com/your-username/notion-ai-summarizer.git
-cd notion-ai-summarizer
+이 프로젝트는 **원클릭 설치**를 지원합니다!
 
-# 2. 가상환경 생성 (권장)
-python -m venv venv
-# 윈도우:
-.\venv\Scripts\activate
-# 맥/리눅스:
-source venv/bin/activate
+1.  **프로젝트 다운로드 (Git Clone)**
+    ```bash
+    git clone https://github.com/jiiihwan/Notion_summarizer
+    cd notion-ai-summarizer
+    ```
 
-# 3. 필수 라이브러리 설치
-pip install -r requirements.txt
-```
+2.  **설치 및 설정 (자동)**
+    *   폴더 안에 있는 **`setup.bat`** 파일을 더블 클릭하세요.
+    *   알아서 가상환경을 만들고 필요한 라이브러리를 모두 설치해줍니다.
+    *   *(혹시 폴더를 다른 곳으로 옮겨서 실행이 안 될 때도, `setup.bat`을 실행하면 자동으로 고쳐줍니다!)*
 
 ### 3. 환경 설정 (.env)
 프로젝트 폴더 안에 `.env` 파일을 새로 만들고, 아래 내용을 복사해서 채워넣으세요.
@@ -112,7 +108,9 @@ python main.py
 ## ⚠️ 주의사항
 
 *   **보안**: `.env` 파일에는 개인적인 API 키가 들어있으므로, **절대 GitHub에 업로드하지 마세요!** (이미 `.gitignore`에 설정되어 있습니다.)
-*   **할당량**: Gemini API 무료 티어는 분당 요청 제한이 있을 수 있습니다. 프로그램에 속도 조절 로직이 포함되어 있으나, 너무 많은 요청을 보내면 일시적으로 멈출 수 있습니다.
+*   **할당량 (Quota)**: 
+    *   Google AI Studio 무료 티어는 **Gemini 3.0 Flash**와 **2.5 Flash** 모델 각각 **하루에 20회(20 RPD)** 정도의 사용량 제한이 있습니다.
+    *   사용량이 초과되면 429 에러가 발생할 수 있으니, 대량의 데이터를 요약할 때는 주의가 필요합니다.
 
 ---
 
