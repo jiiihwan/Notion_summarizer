@@ -15,7 +15,7 @@
 
 1.  **🔍 심층 탐색 (Deep Recursive Fetching)**
     *   단순히 페이지만 읽지 않습니다. **콜아웃(Callout), 토글(Toggle List), 컬럼** 안에 숨겨진 내용까지 샅샅이 찾아냅니다. (Inline Database 포함)
-    *   **최대 5단계 깊이(Depth 5)**까지 재귀적으로 탐색하여, 아주 깊숙한 곳에 있는 정보도 놓치지 않습니다.
+    * **최대 5단계 깊이(Depth 5)**까지 재귀적으로 탐색하여, 아주 깊숙한 곳에 있는 정보도 놓치지 않습니다.
 2.  **📝 스마트 포맷팅 (Markdown to Notion)**
     *   AI가 작성한 요약을 **Notion 전용 블록**(헤더, 인용구, 구분선, 체크리스트 등)으로 깔끔하게 변환하여 저장합니다.
 3.  **🤖 지능형 모델 전환 (Smart Fallback)**
@@ -82,7 +82,7 @@ GEMINI_API_KEY=AIza... (발급받은 키)
 
 ### 터미널 사용자
 ```bash
-python main.py
+.\venv\Scripts\python main.py
 ```
 
 ### 실행 과정
