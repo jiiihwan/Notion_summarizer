@@ -8,6 +8,9 @@
 
 이 프로젝트는 Notion 데이터베이스나 페이지에 있는 방대한 자료들을 자동으로 긁어와서, Google Gemini AI (최신 모델)를 통해 분석하고, 그 결과를 다시 Notion에 예쁜 보고서 형태로 저장해주는 도구입니다.
 
+<img width="1109" height="769" alt="image" src="https://github.com/user-attachments/assets/fbae879e-1fec-4659-bc36-bd12d5e82723" />
+
+
 
 ---
 ## 🤔 왜 만들었나요?
@@ -34,7 +37,7 @@
 <br>
 
 ChatGPT는 유료모델만 Notion MCP를 지원하고,
-Gemini는 노션과 연동할 수가 없습니다.
+Gemini는 웹에서는 노션과 연동할 수가 없습니다.
 
 그래서 직접 만들었습니다.
 
@@ -44,7 +47,7 @@ Antigravity를 활용한 99% 수제 바이브코딩의 결과물
 
 <br>
 
-tip) 프롬프트를 정성스럽게 작성하세요
+tip) 프롬프트를 정성스럽게 작성하세요.
 
 ---
 
