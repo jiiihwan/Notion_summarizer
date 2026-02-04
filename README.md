@@ -15,6 +15,7 @@
 <img src="스크린샷 2026-02-04 144436.png" width="50%">
 
 이거 쓰기 싫어서 만들었습니다.
+
 <br>
 
 노션의 Notion AI는 한 워크스페이스당 대략 20번정도의 무료 사용 제한이 있습니다.
@@ -151,4 +152,4 @@ GEMINI_API_KEY=AIza... (발급받은 키)
 
 ---
 
-Made with ❤️ by Notion & AI Enthusiasts
+Made with ❤️ Antigravity
