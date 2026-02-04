@@ -1,4 +1,4 @@
-# 🧠 Notion AI Intelligent Summarizer (노션 AI 요약기)
+# 🧠 Notion AI Summarizer (노션 AI 요약기)
 
 [![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/)
 [![Notion API](https://img.shields.io/badge/Notion-API-black.svg)](https://developers.notion.com/)
@@ -56,7 +56,7 @@ tip) 프롬프트를 정성스럽게 작성하세요.
 
 1.  **🔍 심층 탐색 (Deep Recursive Fetching)**
     *   단순히 페이지만 읽지 않습니다. **콜아웃(Callout), 토글(Toggle List), 컬럼** 안에 숨겨진 내용까지 샅샅이 찾아냅니다. (Inline Database 포함)
-    * 최대 3단계 깊이(Depth 3)**까지 재귀적으로 탐색하여, **[페이지 -> 콜아웃 -> 토글 -> 내용]** 수준까지 완벽하게 읽어내면서도 속도를 최적화했습니다.
+    * 최대 3단계 깊이(Depth 3)까지 재귀적으로 탐색하여, **[페이지 -> 콜아웃 -> 토글 -> 내용]** 수준까지 완벽하게 읽어내면서도 속도를 최적화했습니다.
 2.  **📝 스마트 포맷팅 (Markdown to Notion)**
     *   AI가 작성한 요약을 **Notion 전용 블록**(헤더, 인용구, 구분선, 체크리스트 등)으로 깔끔하게 변환하여 저장합니다.
 3.  **🤖 지능형 모델 전환 (Smart Fallback)**
