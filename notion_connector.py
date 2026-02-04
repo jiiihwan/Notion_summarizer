@@ -156,7 +156,7 @@ class NotionConnector:
         Limit depth to prevent infinite loops or excessive interaction.
         """
         found_items = []
-        if depth > 5: # Increased depth limit to 5
+        if depth > 3: # Optimized depth limit to 3
             return found_items
 
         url = f"{self.base_url}/blocks/{block_id}/children"
@@ -244,7 +244,7 @@ class NotionConnector:
         DFS to traverse block children and extract text.
         """
         all_text = []
-        if depth > 5: # Limit depth to prevent infinite recursion
+        if depth > 3: # Limit depth to optimize speed
             return ""
 
         url = f"{self.base_url}/blocks/{block_id}/children"
