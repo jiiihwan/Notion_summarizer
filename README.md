@@ -1,4 +1,4 @@
-# 🧠 Notion AI Intelligent Summarizer (노션 AI 자동 요약기)
+# 🧠 Notion AI Intelligent Summarizer (노션 AI 요약기)
 
 [![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/)
 [![Notion API](https://img.shields.io/badge/Notion-API-black.svg)](https://developers.notion.com/)
@@ -10,6 +10,29 @@
 
 
 ---
+## 🤔 왜 만들었나요?
+
+![alt text](<스크린샷 2026-02-04 144436.png>)
+이거 쓰기 싫어서 만들었습니다.
+
+노션의 Notion AI는 한 워크스페이스당 대략 20번정도의 무료 사용 제한이 있습니다.
+워크스페이스 하나에 모든 걸 기록하는 저는
+가끔은 AI를 사용해서 내가 쓴 글을 요약해서 보거나,
+분석하여 인사이트를 얻거나,
+회고에 도움을 받거나 하는 등의 작업을 원했지만
+돈이 없는 학생인 저로써 Notion AI를 결제하기엔 부담스러웠습니다.
+
+ChatGPT는 유료모델만 Notion MCP를 지원하고,
+Gemini는 노션과 연동할 수가 없습니다.
+
+그래서 직접 만들었습니다.
+Antigravity를 활용한 99% 수제 바이브코딩의 결과물
+하루 20~40번씩만 쓸 수 있지만 가끔 요약이 필요할 때 나쁘지 않은 프로그램이 될 수 있습니다.
+
+tip. 프롬프트를 정성스럽게 작성하세요
+
+---
+
 
 ## ✨ 주요 기능 (Key Features)
 
